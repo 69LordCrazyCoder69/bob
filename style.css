@@ -1,0 +1,215 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1a1a; /* Dark background color */
+    color: #ffffff; /* Text color */
+}
+
+/* Header */
+.header {
+    padding: 50px;
+    text-align: center;
+    background: #000000; /* Dark header background color */
+    color: #ffffff; /* Header text color */
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #222222; /* Dark navbar background color */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff; /* Navbar text color */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #444444; /* Navbar link hover background color */
+    color: #ffffff; /* Navbar link hover text color */
+}
+
+.navbar a.active {
+    background-color: #666666; /* Active/current link background color */
+    color: #ffffff; /* Active/current link text color */
+}
+
+.navbar a.date {
+    float: right;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* Main Content */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #292929; /* Sidebar background color */
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: #1a1a1a; /* Main content background color */
+    padding: 20px;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: #444444; /* Fake image background color */
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #222222; /* Footer background color */
+}
+
+/* Search Box */
+.search-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #222222;
+}
+
+.search-select {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-btn {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #666666;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Business Cards Grid */
+
+.resultsDiv {
+  display: grid;
+  grid-gap: 20px;
+
+  /*Set the default number of columns here, best for small screens*/
+  grid-template-columns: 1fr;
+}
+
+.business-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  
+  color: white;
+  text-align: center;
+  height: 30px;
+}
+
+/*As the screen is larger these media queries are triggered and we can set a new number of columns*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .resultsDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .resultsDiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*  Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .resultsDiv {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*  X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .resultsDiv {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  .resultsDiv {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.business-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.business-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.business-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.business-card p {
+    margin-bottom: 5px;
+}
+
+/* Add any other custom styles as needed */
+
+
