@@ -37,8 +37,7 @@ map.on('drag', function (e) {
 
 // Create a marker with an initial position
 const marker = L.marker([-58, -74]).addTo(map);
-
-
+marker.bindPopup(`<b><u>Volddara`).openPopup();
 
 
 
