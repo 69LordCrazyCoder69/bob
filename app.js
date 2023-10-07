@@ -36,4 +36,4 @@ map.on('drag', function (e) {
 });
 
 // Create a marker with an initial position
-const a4Capital = L.marker([58, -75]).addTo(map);
+const marker = L.marker([-58, -74]).addTo(map);
