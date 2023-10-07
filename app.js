@@ -26,6 +26,7 @@ map.on('drag', function (e) {
   const zoom = map.getZoom();
   if (zoom <= 1) {
     // Lock vertical drag when zoomed out
+    
     const center = map.getCenter();
     const newCenter = L.latLng(
       Math.max(maxSouth, Math.min(maxNorth, center.lat)), 
