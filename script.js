@@ -81,6 +81,7 @@ function convert() {
   
   // Replace these with your own conversion rates
   const conversionRates = {
+    Jirr: 0.5,
     Vodra: 1,
     Para: 5,
     // Add more conversion rates for different currencies
