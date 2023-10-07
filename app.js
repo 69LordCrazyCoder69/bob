@@ -1,7 +1,7 @@
 const map = L.map('map', {
   center: [0, 0],  // Initial center of the map
   zoom: 1,         // Initial zoom level
-  maxZoom: 5,      // Adjust maximum zoom level based on the number of zoom levels generated
+  maxZoom: 3,      // Adjust maximum zoom level based on the number of zoom levels generated
   minZoom: 1       // Lock the minimum zoom level
   
 });
