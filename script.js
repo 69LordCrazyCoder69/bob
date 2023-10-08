@@ -20,6 +20,7 @@ function populateBusinessCards() {
     resultsDiv.appendChild(card);
   });
 }
+
 function createBusinessCard(business) {
     const card = document.createElement("div");
     card.className = "business-card";
@@ -84,6 +85,7 @@ function convert() {
     Jirr: 0.5,
     Vodra: 1,
     Para: 5,
+    Doller: 75
     // Add more conversion rates for different currencies
   };
 
